@@ -12,6 +12,7 @@ class ArticlePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black54,
         title: Text(article.title),
       ),
       body: Padding(
@@ -37,7 +38,7 @@ class ArticlePage extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(6.0),
               decoration: BoxDecoration(
-                color: Colors.red,
+                color: Colors.blue[700],
                 borderRadius: BorderRadius.circular(30.0),
               ),
               child: Text(
