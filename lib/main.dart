@@ -29,7 +29,18 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("News App", style: TextStyle(color: Colors.black)),
+        centerTitle: true,
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("Semar",
+                style: TextStyle(
+                    color: Colors.black, fontWeight: FontWeight.w500)),
+            Text("News",
+                style:
+                    TextStyle(color: Colors.blue, fontWeight: FontWeight.w500)),
+          ],
+        ),
         backgroundColor: Colors.white,
       ),
 
