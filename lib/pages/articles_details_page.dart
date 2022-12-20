@@ -52,12 +52,48 @@ class ArticlePage extends StatelessWidget {
               height: 8.0,
             ),
             Text(
-              article.description,
+              article.publishedAt,
+              style: TextStyle(
+                color: Colors.blue[800],
+                fontWeight: FontWeight.normal,
+                fontSize: 12.0,
+              ),
+            ),
+            SizedBox(
+              height: 8.0,
+            ),
+            Text(
+              article.title,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16.0,
               ),
-            )
+            ),
+            SizedBox(
+              height: 16.0,
+            ),
+            Text(
+              article.content,
+              style: TextStyle(
+                fontWeight: FontWeight.normal,
+                fontSize: 14.0,
+              ),
+            ),
+            SizedBox(
+              height: 26.0,
+            ),
+            Text("Baca selengkapnya di: "),
+            SizedBox(
+              height: 8.0,
+            ),
+            Text(
+              article.url,
+              style: TextStyle(
+                color: Colors.blue,
+                fontWeight: FontWeight.normal,
+                fontSize: 12.0,
+              ),
+            ),
           ],
         ),
       ),
